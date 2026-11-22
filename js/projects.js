@@ -40,6 +40,7 @@ function createProjectCard(project) {
       "View project"
     );
     link.href = project.url;
+    link.setAttribute("aria-label", `View project: ${project.title}`);
     link.target = "_blank";
     link.rel = "noopener";
     body.append(link);
